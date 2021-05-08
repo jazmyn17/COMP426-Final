@@ -1,0 +1,301 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color: black;
+}
+
+.timeAndDate {
+  position: absolute;
+  right: 10%;
+}
+
+.instructions {
+  color: white;
+}
+
+.level {
+  color: rgb(190, 189, 189);
+  font-size: 22px;
+}
+
+.title {
+  color: white;
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+.game {
+  display: flexbox;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.game div {
+  display: flex;
+  align-content: center;
+}*/
+
+.game-board {
+  margin: 0 auto;
+  /*display: flex;
+  flex-wrap: wrap;
+  /*width: 780px;
+  width: 840px;
+  /*width: 520px;*/
+  /*width: 72vw;*/
+}
+
+.row button{
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.middle button{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#colorButton {
+  width: 150px;
+  height: 150px;
+  /*width: 250px;
+  /*width: 34vw;
+  height: 250px;
+  /*height: 34vh;*/
+  /*margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;*/
+  /*margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-right: 1vw;
+  margin-left: 1vw;*/
+  border-radius: 50%;
+}
+
+#colorButton:hover {
+  border-color: white;
+  border-width: thick;
+}
+
+.start {
+  background-color: white;
+  margin-top: 3%;
+  margin-right: 10px;
+  width: 120px;
+  height: 36px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.reset {
+  background-color: white;
+  margin-top: 3%;
+  margin-right: 10px;
+  width: 120px;
+  height: 36px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.sound {
+  background-color: white;
+  margin-top: 3%;
+  margin-right: 10px;
+  width: 120px;
+  height: 36px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.share {
+  background-color: white;
+  margin-top: 3%;
+  width: 120px;
+  height: 36px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.start:hover {
+  opacity: 1;
+  width: 140px;
+}
+
+.reset:hover {
+  opacity: 1;
+  width: 140px;
+}
+
+.sound:hover {
+  opacity: 1;
+  width: 140px;
+}
+
+.share:hover {
+  opacity: 1;
+}
+
+.r.r {
+  background-color: red;
+  opacity: 0.6;
+  border-color: transparent;
+  /*background: repeating-radial-gradient(
+  circle,
+  red,
+  red 15px,
+  #6f0202 30px, 
+  #6f0202 30px
+  );*/
+  background: repeating-radial-gradient(
+  circle,
+  red,
+  red 10px,
+  #6f0202 50px, 
+  #6f0202 70px
+  );
+}
+
+.g.g {
+  background-color: green;
+  opacity: 0.6;
+  border-color: transparent;
+  /*background: repeating-radial-gradient(
+  circle,
+  green,
+  green 10px,
+  #1f3d03 20px, 
+  #1f3d03 40px
+  );*/
+  background: repeating-radial-gradient(
+  circle,
+  green,
+  green 10px,
+  #1f3d03 50px, 
+  #1f3d03 70px
+  );
+}
+
+.y.y {
+  background-color: yellow;
+  opacity: 0.6;
+  border-color: transparent;
+  /*background: repeating-radial-gradient(
+  circle,
+  yellow,
+  yellow 10px,
+  #8a8108 10px, 
+  #8a8108 20px
+  );*/
+  background: repeating-radial-gradient(
+  circle,
+  yellow,
+  yellow 10px,
+  #8a8108 50px, 
+  #8a8108 70px
+  );
+}
+
+.b.b {
+  background-color: blue;
+  opacity: 0.6;
+  border-color: transparent;
+  background: repeating-radial-gradient(
+  circle,
+  blue,
+  blue 10px,
+  #030c3d 50px, 
+  #030c3d 70px
+  );
+}
+
+.o.o {
+  background-color: orange;
+  opacity: 0.6;
+  border-color: transparent;
+  background: repeating-radial-gradient(
+  circle,
+  orange,
+  orange 10px,
+  #664705 50px, 
+  #664705 70px
+  );
+}
+
+.p.p {
+  background-color: purple;
+  opacity: 0.6;
+  border-color: transparent;
+  background: repeating-radial-gradient(
+  circle,
+  purple,
+  purple 10px,
+  #2b033d 50px, 
+  #2b033d 70px
+  );
+}
+
+.active.r {
+  opacity: 1;
+  border-color: white;
+  background-color: red;
+}
+
+.active.g {
+  opacity: 1;
+  border-color: white;
+  background-color: green;
+}
+
+.active.y {
+  opacity: 1;
+  border-color: white;
+  background-color: yellow;
+}
+
+.active.b {
+  opacity: 1;
+  border-color: white;
+  background-color: blue;
+}
+
+.active.o {
+  opacity: 1;
+  border-color: white;
+  background-color: orange;
+}
+
+.active.p {
+  opacity: 1;
+  border-color: white;
+  background-color: purple;
+}
+
+.factStart {
+  margin-top: 5px;
+  color: white;
+}
+
+.timer {
+  background-color: white;
+}
+
+.textArea {
+  height: 60px;
+  width: 200px;
+}
+
+.shareResults {
+  display: inline-block;
+}
+
+
+.share {
+  border: none;
+  float: right;
+}
