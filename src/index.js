@@ -22,12 +22,12 @@ class App extends Component {
         }
     }
     //API 1 (I think. If not I have more below)
-    audio = new Audio("http://d21c.com/juro777/wavs/telezapper1.wav");
-    audio1 = new Audio("http://www.dewa.com/sound/select9.wav");
-    audio2 = new Audio("http://www.simphonics.com/library/WaveFiles/Production%20Wavefiles/FS-98/mrsdahl.wav");
-    audio3 = new Audio("http://www.chiptape.com/chiptape/sounds/short/cursor6.wav");
+    audio = new Audio("http://www.stdimension.org/MediaLib/effects/computer/federation/keyok4.wav");  //http://d21c.com/juro777/wavs/telezapper1.wav");
+    audio1 = new Audio("http://www.stdimension.org/MediaLib/effects/computer/federation/keyok4.wav");  //http://www.dewa.com/sound/select9.wav");
+    audio2 = new Audio("http://www.stdimension.org/MediaLib/effects/computer/federation/keyok4.wav");  //http://www.simphonics.com/library/WaveFiles/Production%20Wavefiles/FS-98/mrsdahl.wav");
+    audio3 = new Audio("http://www.stdimension.org/MediaLib/effects/computer/federation/keyok4.wav");  //http://www.chiptape.com/chiptape/sounds/short/cursor6.wav");
     audio4 = new Audio("http://www.stdimension.org/MediaLib/effects/computer/federation/keyok4.wav");
-    audio5 = new Audio("http://www.science.smith.edu/dftwiki/images/4/4e/Sonar.wav");
+    audio5 = new Audio("http://www.stdimension.org/MediaLib/effects/computer/federation/keyok4.wav");  //http://www.science.smith.edu/dftwiki/images/4/4e/Sonar.wav");
 
     background = $.get("https://picsum.photos/200/300");
 
@@ -176,7 +176,7 @@ class App extends Component {
     getRandomNumberFact() {
         //API 2
         if (this.getFact === true) {
-            $.get('http://numbersapi.com/' + this.state.level + '/trivia?notfound=floor&fragment', function(data) {
+            $.get('https://numbersapi.com/' + this.state.level + '/trivia?notfound=floor&fragment', function(data) {
             $('.randomNumberFact').text(data);
             });
             this.getFact = false;
