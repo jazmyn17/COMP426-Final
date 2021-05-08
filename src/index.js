@@ -176,7 +176,7 @@ class App extends Component {
     getRandomNumberFact() {
         //API 2
         if (this.getFact === true) {
-            $.get('https://numbersapi.com/' + this.state.level + '/trivia?notfound=floor&fragment', function(data) {
+            $.get('numbersapi.com/' + this.state.level + '/trivia?notfound=floor&fragment', function(data) {
             $('.randomNumberFact').text(data);
             });
             this.getFact = false;
